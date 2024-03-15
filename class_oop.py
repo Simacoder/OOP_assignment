@@ -3,11 +3,16 @@ class Person:
         self.name = name
         self.age = age
         self.gender = gender
+    
+    # creating the method object of the person information 
+    def introduce(self):
+        print(f"Hello, My name is {self.name}. I am {self.age} years old andI am {self.gender}")
 
-# creting an object 
-person1 = Person("Simanga", 30, 'Male')
+# creating the object of the class
+person1 = Person("Simanga", 30, "Male")
 
-#invoking the class object
-print(person1.name)
-print(person1.age)
-print(person1.gender)
+#invoking the introduce methos o display the Person info
+person1.introduce()
+
+
+
